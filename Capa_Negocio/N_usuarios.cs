@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Capa_datos;
 using Capa_entidades;
 using Datos;
-using Microsoft.Data.SqlClient;
+
 
 namespace Capa_Negocio
 {
