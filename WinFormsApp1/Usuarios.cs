@@ -15,11 +15,13 @@ namespace Vista
 {
     public partial class Usuarios : Form
     {
+        string encriptada = "";
         public Usuarios()
         {
             InitializeComponent();
         }
         N_usuarios N_usuarios = new N_usuarios();
+        N_encriptar N_encriptacion = new N_encriptar();
 
         //Metodo para mostrar los usuarios
         public void mostrarUsuarios()
@@ -34,13 +36,14 @@ namespace Vista
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             E_usuarios E_usuarios = new E_usuarios();
+            N_encriptar n_Encriptar = new N_encriptar();
 
             E_usuarios.nomUsuarios = txtNombre.Text;
             E_usuarios.cedula = int.Parse(txtCedula.Text);
             E_usuarios.correo = txtCorreo.Text;
             E_usuarios.contrasena = txtcontra.Text;
+            n_Encriptar.GetSHA256(txtcontra.Text);
             E_usuarios.tipoUsuario = txtTipo_Usuario.Text;
-
             N_usuarios.insertar_Usuarios(E_usuarios);
             mostrarUsuarios();
             MessageBox.Show("Usuario agregado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);

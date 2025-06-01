@@ -1,4 +1,6 @@
-﻿namespace Capa_entidades
+﻿using System.Runtime.Serialization.Formatters.Binary;
+
+namespace Capa_entidades
 {
     public class E_usuarios
     {
@@ -7,6 +9,8 @@
         public string correo { get; set; }
         public string contrasena { get; set; }
        public string tipoUsuario { get; set; }
+        public string movimientos { get; set; }
+       
 
     }
    

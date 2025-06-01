@@ -52,7 +52,7 @@
             gridUser.Location = new Point(310, 76);
             gridUser.Name = "gridUser";
             gridUser.RowHeadersWidth = 51;
-            gridUser.Size = new Size(678, 269);
+            gridUser.Size = new Size(994, 269);
             gridUser.TabIndex = 0;
             gridUser.CellClick += gridUser_CellClick;
             // 

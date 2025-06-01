@@ -21,7 +21,7 @@ namespace Capa_datos
         public DataSet Mostrar_usuarios()
         {
             Dconexion.conectar();
-            string sql = "select nomUsuario,cedula,correo,contrasena,tipoUsuario from Usuarios";
+            string sql = "select nomUsuario,cedula,correo,contrasena,tipoUsuario,movimientos from Usuarios";
             DataSet dst = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(sql,Dconexion.conectar());
             da.Fill(dst,"Usuarios");
@@ -32,8 +32,8 @@ namespace Capa_datos
         public void insertar_Usuarios(E_usuarios ep)
         {
             Dconexion.conectar();
-            string sql = "insert into Usuarios (nomUsuario,cedula,correo,contrasena,tipoUsuario) " +
-                "values('"+ ep.nomUsuarios +"',"+ ep.cedula +",'" + ep.correo + "','"+ ep.contrasena + "','"+ ep.tipoUsuario+"')";
+            string sql = "insert into Usuarios (nomUsuario,cedula,correo,contrasena,tipoUsuario,movimientos) " +
+                "values('"+ ep.nomUsuarios +"',"+ ep.cedula +",'" + ep.correo + "','"+ ep.contrasena + "','"+ ep.tipoUsuario+ "','"+ep.movimientos+"')";
             SqlCommand cmd = new SqlCommand(sql,Dconexion.conectar());
             cmd.ExecuteNonQuery();
             Dconexion.desconectar();
