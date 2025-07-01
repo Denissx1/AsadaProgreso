@@ -74,7 +74,8 @@ namespace Vista
                 txtCedula.Text = gridUser.CurrentRow.Cells[1].Value.ToString();
                 txtCorreo.Text = gridUser.CurrentRow.Cells[2].Value.ToString();
                 txtcontra.Text = gridUser.CurrentRow.Cells[3].Value.ToString();
-                txtTipo_Usuario.Text = gridUser.CurrentRow.Cells[4].Value.ToString();
+                
+               
 
             }
             catch (Exception ex)
@@ -90,8 +91,13 @@ namespace Vista
                 E_usuarios.nomUsuarios = gridUser.CurrentRow.Cells[0].Value.ToString();
                 N_usuarios.eliminar_Usuario(E_usuarios);
                 mostrarUsuarios();
-                MessageBox.Show("Usuario eliminado con exito","Elimino",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario eliminado con exito", "Elimino", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void gridUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

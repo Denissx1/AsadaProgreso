@@ -11,7 +11,7 @@ namespace Capa_entidades
        public string tipoUsuario { get; set; }
         public string movimientos { get; set; }
        
-
+        public string pass_Encript { get; set; }
     }
    
 }

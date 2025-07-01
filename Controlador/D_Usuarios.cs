@@ -21,7 +21,7 @@ namespace Capa_datos
         public DataSet Mostrar_usuarios()
         {
             Dconexion.conectar();
-            string sql = "select nomUsuario,cedula,correo,contrasena,tipoUsuario,movimientos from Usuarios";
+            string sql = "select nomUsuario,contrasena from Usuarios";
             DataSet dst = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(sql,Dconexion.conectar());
             da.Fill(dst,"Usuarios");

@@ -126,7 +126,7 @@
             // 
             lblhora.AutoSize = true;
             lblhora.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lblhora.Location = new Point(792, 9);
+            lblhora.Location = new Point(794, 9);
             lblhora.Name = "lblhora";
             lblhora.Size = new Size(57, 25);
             lblhora.TabIndex = 7;

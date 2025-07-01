@@ -55,6 +55,7 @@
             gridUser.Size = new Size(994, 269);
             gridUser.TabIndex = 0;
             gridUser.CellClick += gridUser_CellClick;
+            gridUser.CellContentClick += gridUser_CellContentClick;
             // 
             // label1
             // 
