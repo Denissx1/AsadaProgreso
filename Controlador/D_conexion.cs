@@ -10,8 +10,11 @@ namespace Datos
 {
     public class D_conexion
     {
+        // Otro tipo de conexion a la BD
+        public static string cn = "server=.;database=AsadaProgreso;user=sa;password=1234";     
+        //Fin de cadena 
         SqlConnection con;
-        public SqlConnection conectar()
+        public   SqlConnection conectar()
         {
             try
             {

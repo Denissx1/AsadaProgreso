@@ -11,6 +11,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_entidades", "Capa_enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Negocio", "Capa_Negocio\Capa_Negocio.csproj", "{17048A36-0882-41C5-80E0-EFE2E870BF2C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iconos", "iconos", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		WinFormsApp1\Icon\Junta Directiva.png = WinFormsApp1\Icon\Junta Directiva.png
+		WinFormsApp1\Icon\Previstas.png = WinFormsApp1\Icon\Previstas.png
+		WinFormsApp1\Icon\Reportes.png = WinFormsApp1\Icon\Reportes.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2BD0965A-39A7-45F5-9BDB-439AB01FD4D0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

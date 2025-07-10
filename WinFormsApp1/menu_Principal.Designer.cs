@@ -32,18 +32,9 @@
             label2 = new Label();
             label3 = new Label();
             menuStrip1 = new MenuStrip();
-            reportesToolStripMenuItem = new ToolStripMenuItem();
-            reporteDeUsuariosToolStripMenuItem = new ToolStripMenuItem();
-            reporteDeJuntaToolStripMenuItem = new ToolStripMenuItem();
-            reportePrevistasToolStripMenuItem = new ToolStripMenuItem();
-            reporteDeMovimientosToolStripMenuItem = new ToolStripMenuItem();
-            reporteDeIngresoYSalidasToolStripMenuItem = new ToolStripMenuItem();
-            juntaToolStripMenuItem = new ToolStripMenuItem();
-            previstasToolStripMenuItem = new ToolStripMenuItem();
-            mantenimientoToolStripMenuItem = new ToolStripMenuItem();
-            saliToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem1 = new ToolStripMenuItem();
+            salirToolStripMenuItem2 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -79,79 +70,12 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { reportesToolStripMenuItem, juntaToolStripMenuItem, previstasToolStripMenuItem, mantenimientoToolStripMenuItem, saliToolStripMenuItem, salirToolStripMenuItem, salirToolStripMenuItem1 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { salirToolStripMenuItem, salirToolStripMenuItem1, salirToolStripMenuItem2 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(799, 28);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
-            // 
-            // reportesToolStripMenuItem
-            // 
-            reportesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { reporteDeUsuariosToolStripMenuItem, reporteDeJuntaToolStripMenuItem, reportePrevistasToolStripMenuItem, reporteDeMovimientosToolStripMenuItem, reporteDeIngresoYSalidasToolStripMenuItem });
-            reportesToolStripMenuItem.ForeColor = Color.Blue;
-            reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            reportesToolStripMenuItem.Size = new Size(82, 24);
-            reportesToolStripMenuItem.Text = "Reportes";
-            // 
-            // reporteDeUsuariosToolStripMenuItem
-            // 
-            reporteDeUsuariosToolStripMenuItem.Name = "reporteDeUsuariosToolStripMenuItem";
-            reporteDeUsuariosToolStripMenuItem.Size = new Size(281, 26);
-            reporteDeUsuariosToolStripMenuItem.Text = "Reporte de Usuarios";
-            // 
-            // reporteDeJuntaToolStripMenuItem
-            // 
-            reporteDeJuntaToolStripMenuItem.Name = "reporteDeJuntaToolStripMenuItem";
-            reporteDeJuntaToolStripMenuItem.Size = new Size(281, 26);
-            reporteDeJuntaToolStripMenuItem.Text = "Reporte de Junta";
-            // 
-            // reportePrevistasToolStripMenuItem
-            // 
-            reportePrevistasToolStripMenuItem.Name = "reportePrevistasToolStripMenuItem";
-            reportePrevistasToolStripMenuItem.Size = new Size(281, 26);
-            reportePrevistasToolStripMenuItem.Text = "Reporte Previstas";
-            // 
-            // reporteDeMovimientosToolStripMenuItem
-            // 
-            reporteDeMovimientosToolStripMenuItem.Name = "reporteDeMovimientosToolStripMenuItem";
-            reporteDeMovimientosToolStripMenuItem.Size = new Size(281, 26);
-            reporteDeMovimientosToolStripMenuItem.Text = "Reporte de Movimientos";
-            // 
-            // reporteDeIngresoYSalidasToolStripMenuItem
-            // 
-            reporteDeIngresoYSalidasToolStripMenuItem.Name = "reporteDeIngresoYSalidasToolStripMenuItem";
-            reporteDeIngresoYSalidasToolStripMenuItem.Size = new Size(281, 26);
-            reporteDeIngresoYSalidasToolStripMenuItem.Text = "Reporte de Ingreso y Salidas";
-            // 
-            // juntaToolStripMenuItem
-            // 
-            juntaToolStripMenuItem.ForeColor = Color.Blue;
-            juntaToolStripMenuItem.Name = "juntaToolStripMenuItem";
-            juntaToolStripMenuItem.Size = new Size(57, 24);
-            juntaToolStripMenuItem.Text = "Junta";
-            // 
-            // previstasToolStripMenuItem
-            // 
-            previstasToolStripMenuItem.ForeColor = Color.Blue;
-            previstasToolStripMenuItem.Name = "previstasToolStripMenuItem";
-            previstasToolStripMenuItem.Size = new Size(80, 24);
-            previstasToolStripMenuItem.Text = "Previstas";
-            // 
-            // mantenimientoToolStripMenuItem
-            // 
-            mantenimientoToolStripMenuItem.ForeColor = Color.Blue;
-            mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            mantenimientoToolStripMenuItem.Size = new Size(124, 24);
-            mantenimientoToolStripMenuItem.Text = "Mantenimiento";
-            // 
-            // saliToolStripMenuItem
-            // 
-            saliToolStripMenuItem.ForeColor = Color.Blue;
-            saliToolStripMenuItem.Name = "saliToolStripMenuItem";
-            saliToolStripMenuItem.Size = new Size(59, 24);
-            saliToolStripMenuItem.Text = "Roles";
-            saliToolStripMenuItem.Click += saliToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
@@ -169,12 +93,19 @@
             salirToolStripMenuItem1.Text = "Acerca de";
             salirToolStripMenuItem1.Click += salirToolStripMenuItem1_Click;
             // 
+            // salirToolStripMenuItem2
+            // 
+            salirToolStripMenuItem2.Name = "salirToolStripMenuItem2";
+            salirToolStripMenuItem2.Size = new Size(52, 24);
+            salirToolStripMenuItem2.Text = "Salir";
+            salirToolStripMenuItem2.Click += salirToolStripMenuItem2_Click;
+            // 
             // menu_Principal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(799, 450);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -182,6 +113,7 @@
             MainMenuStrip = menuStrip1;
             Name = "menu_Principal";
             Text = "menu_Principal";
+            Load += menu_Principal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -194,17 +126,8 @@
         private Label label2;
         private Label label3;
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem reportesToolStripMenuItem;
-        private ToolStripMenuItem juntaToolStripMenuItem;
-        private ToolStripMenuItem previstasToolStripMenuItem;
-        private ToolStripMenuItem mantenimientoToolStripMenuItem;
-        private ToolStripMenuItem saliToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem1;
-        private ToolStripMenuItem reporteDeUsuariosToolStripMenuItem;
-        private ToolStripMenuItem reporteDeJuntaToolStripMenuItem;
-        private ToolStripMenuItem reportePrevistasToolStripMenuItem;
-        private ToolStripMenuItem reporteDeMovimientosToolStripMenuItem;
-        private ToolStripMenuItem reporteDeIngresoYSalidasToolStripMenuItem;
+        private ToolStripMenuItem salirToolStripMenuItem2;
     }
 }

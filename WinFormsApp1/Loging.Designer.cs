@@ -96,6 +96,7 @@
             BtnIngresar.Size = new Size(94, 72);
             BtnIngresar.TabIndex = 4;
             BtnIngresar.UseVisualStyleBackColor = true;
+            BtnIngresar.Click += BtnIngresar_Click;
             // 
             // LblRegistrarse
             // 
