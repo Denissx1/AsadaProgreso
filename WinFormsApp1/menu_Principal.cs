@@ -67,7 +67,8 @@ namespace capa_Vista
             this.MainMenuStrip = miMenu;
             Controls.Add(miMenu);
         }
-        private void click_em_menu(object sender, System.EventArgs e){
+        private void click_em_menu(object sender, System.EventArgs e)
+        {
             ToolStripMenuItem menuSeleccionado = (ToolStripMenuItem)sender;
 
             //NOS AYUDA A VALIDAR SI EXISTE ELEMENTOS EN NUESTRO PROYECTO - OBTENEMOS PROYECTO
@@ -98,9 +99,8 @@ namespace capa_Vista
                 }
                 else
                 {
-
                     this.IsMdiContainer = true;
-                   // FormularioCreado.MdiParent = this;
+                    // FormularioCreado.MdiParent = this;
                     FormularioCreado.Show();
                 }
 
@@ -109,6 +109,10 @@ namespace capa_Vista
 
         }
 
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

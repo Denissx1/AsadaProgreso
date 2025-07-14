@@ -49,17 +49,22 @@ namespace WinFormsApp1
         {
             int idUsuario_esperado = D_Loging.Loguear(TxtNombre.Text, TxtContra.Text);
 
-            if(idUsuario_esperado != 0)
+            if (idUsuario_esperado != 0)
             {
                 this.Hide();
                 menu_Principal mdi = new menu_Principal(idUsuario_esperado);
                 mdi.Show();
-                
+
             }
             else
             {
                 MessageBox.Show("Usuario no encontrado");
             }
+        }
+
+        private void Loging_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -196,6 +196,7 @@
             Name = "Loging";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Loging";
+            Load += Loging_Load;
             ((System.ComponentModel.ISupportInitialize)PbLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)PbPassword).EndInit();
             ResumeLayout(false);
