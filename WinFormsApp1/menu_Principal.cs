@@ -100,13 +100,11 @@ namespace capa_Vista
                 else
                 {
                     this.IsMdiContainer = true;
-                    // FormularioCreado.MdiParent = this;
+                    //FormularioCreado.MdiParent = this;
                     FormularioCreado.Show();
                 }
 
             }
-
-
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

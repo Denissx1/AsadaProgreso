@@ -28,18 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(201, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(401, 28);
+            label1.TabIndex = 4;
+            label1.Text = "Vista De Miembros de la Junta";
             // 
             // FrmverMiembro
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Name = "FrmverMiembro";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Ver Mienbros Junta";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }

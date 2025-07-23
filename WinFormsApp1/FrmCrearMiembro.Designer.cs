@@ -68,6 +68,7 @@
             DataGridMienbroJunta.RowHeadersWidth = 51;
             DataGridMienbroJunta.Size = new Size(930, 326);
             DataGridMienbroJunta.TabIndex = 2;
+            DataGridMienbroJunta.CellContentClick += DataGridMienbroJunta_CellContentClick;
             // 
             // label1
             // 

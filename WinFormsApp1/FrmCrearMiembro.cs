@@ -32,5 +32,10 @@ namespace capa_Vista
         {
             this.Close();
         }
+
+        private void DataGridMienbroJunta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

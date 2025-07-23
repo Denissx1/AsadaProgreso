@@ -91,9 +91,9 @@
             BtnIngresar.FlatAppearance.BorderSize = 0;
             BtnIngresar.FlatStyle = FlatStyle.Flat;
             BtnIngresar.Image = (Image)resources.GetObject("BtnIngresar.Image");
-            BtnIngresar.Location = new Point(475, 362);
+            BtnIngresar.Location = new Point(482, 362);
             BtnIngresar.Name = "BtnIngresar";
-            BtnIngresar.Size = new Size(94, 72);
+            BtnIngresar.Size = new Size(81, 70);
             BtnIngresar.TabIndex = 4;
             BtnIngresar.UseVisualStyleBackColor = true;
             BtnIngresar.Click += BtnIngresar_Click;
